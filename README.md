@@ -5,7 +5,7 @@ Built as a front-end practice project using semantic HTML and modern CSS (Flexbo
 
 ## Preview
 
-- `./assets/preview.png`
+![Preview of the Mangata & Gallo website](assets/preview.png)
 
 ## Features
 
