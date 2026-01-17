@@ -1,0 +1,224 @@
+body {
+    background-color: var(--bg-main);
+    background-image:
+        linear-gradient(
+            rgba(247, 243, 234, 0.9),
+            rgba(247, 243, 234, 0.9) 
+        ),
+        url("../images/backgrounds/gold_shimmer.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: var(--text-dark);
+}
+
+header > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    width: 50rem;
+    height: auto;
+    filter: brightness(1) invert();
+} 
+
+nav {
+    background-color: var(--bg-dark);     
+    padding: 0.75rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;                   
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-light);                
+    font-size: 0.95rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.3rem;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-gold);   
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+section{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+article{
+    flex: 1;
+    background-color: var(--bg-card);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin:0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+article:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+article > img{
+    width:100%;
+    height:auto;
+    border-radius: 12px;
+    display: block;
+}
+
+footer{
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding: 1.5rem 0;
+    display:flex
+}
+
+footer div{
+    flex: 1;
+    text-align: center;
+    
+}
+
+footer > div img{
+    width: 10rem;
+    height: auto;
+}
+
+
+.hero {
+     background:
+        radial-gradient(
+            circle at center,
+            rgba(30, 30, 30, 0.85),
+            rgba(15, 15, 15, 0.95)
+        );
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(216, 178, 111, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    max-width: 800px;
+    color: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: var(--text-light);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.products {
+    
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;  
+    justify-content: center; 
+}
+
+.product-card-ring img {
+    width: 100%;
+    height: 220px;           
+    object-fit: cover;  
+    object-position: center 90%;    
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.product-card-bracelet img {
+    width: 100%;
+    height: 220px;           
+    object-fit: cover;  
+    object-position: center 60%;     
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.product-card-earring img {
+    width: 100%;
+    height: 220px;           
+    object-fit: cover;  
+    object-position: center 60%;    
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+:root {
+    --font-heading: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+    --font-body: "Lato", "Montserrat", Arial, sans-serif;
+    --bg-main: #F7F3EA;
+    --bg-card: #C7C3BD;
+    --bg-dark: #151515;
+    --accent-gold: #D8B26F;
+    --text-dark: #151515;
+    --text-light: #F7F3EA;
+    --border-silver: #ECECEC;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+body, p, li {
+    font-family: var(--font-body);
+    font-weight: 300;
+}
