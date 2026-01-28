@@ -1,11 +1,9 @@
 # Mangata & Gallo — Fictional Jewelry Store Website
 
+<img src="assets/mangata_gallo.gif" width="1000" alt="Demo of the website 'Mangata & Gallo" />
+
 A responsive landing page for **Mangata & Gallo**, a fictional luxury jewelry brand.  
 Built as a front-end practice project using semantic HTML and modern CSS (Flexbox, variables, and responsive layout).
-
-## Preview
-
-![Preview of the Mangata & Gallo website](assets/preview.png)
 
 ## Features
 
